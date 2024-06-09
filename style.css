@@ -9,6 +9,9 @@ input[type=message], input[type=email], input[type=text], textarea {
     margin-bottom: 16px; /* Bottom margin */
     resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
   }
+body {
+background-color: #ff0000;    
+}
   
   /* Style the submit button with a specific background color etc */
   button[type=submit] {
@@ -34,70 +37,5 @@ input[type=message], input[type=email], input[type=text], textarea {
   MainMenu {visibility: hidden;}
   footer {visibility: hidden;}
   header {visibility: hidden;}
-*,
-*:before,
-*:after{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-.container{
-    height: 500px;
-    width: 500px;
-    position: absolute;
-    margin: auto;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    overflow: hidden;
-    border-radius: 10px;
-}
-.container div{
-    position: absolute;
-    border-radius: 50%;
-    animation: gradient 4s infinite;
-}
-@keyframes gradient{
-    70%{
-        transform: scale(1.2) translate(50px);
-    }
-}
-.container div:nth-child(1){
-    height: 90%;
-    width: 80%;
-    background-color: #ffffff;
-    left: -20%;
-    top: -10%;
-}
-.container div:nth-child(2){
-    height: 80%;
-    width: 70%;
-    background-color: #800f86;
-    top: -12%;
-    right: -12%;
-    animation-delay: 2s;
-}
-.container div:nth-child(3){
-    height: 65%;
-    width: 80%;
-    background-color: #ac1212;
-    bottom: -15%;
-    right: -20%;
-    animation-delay: 0.3s;
-}
-.container div:nth-child(4){
-    height: 50%;
-    width: 75%;
-    background-color: #ff0000;
-    bottom: -10%;
-    left: -18%;
-    animation-delay: 1.2s;
-}
-.container:after{
-    position: absolute;
-    content: "";
-    height: 100%;
-    width: 100%;
-    backdrop-filter: blur(80px);
+
 }
