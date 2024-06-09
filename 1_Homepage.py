@@ -4,8 +4,8 @@ import requests
 from streamlit_lottie import st_lottie
 
 
-logo = Image.open('C://Users//hp//OneDrive//My files//Python Web//AmazingSells//logo.png')
-hm_logo=Image.open('C://Users//hp//OneDrive//My files//Python Web//AmazingSells//Untitled.png')
+logo = Image.open('/logo.png')
+hm_logo=Image.open('/Untitled.png')
 
 st.set_page_config(
     page_title="AmazingSells",
